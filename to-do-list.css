@@ -1,0 +1,146 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+ body {
+   margin: 0;
+   background-color: #fff8e7;
+   color: #2d2d2d;
+   align-items: center;
+   justify-items: center;
+   display: flex;
+   flex-direction: column;
+   background-repeat: no-repeat;
+   background-image: url('/javascript-course/bg-desktop-light.jpg');
+ }
+
+ h1 {
+   margin-left: -220px;
+   color: white;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .container {
+   width: 400px;
+   height: 500px;
+   background: #f5f7fa;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+ }
+
+ .task-list {
+   flex: 1;
+   overflow-y: auto;
+   border-radius: 8px;
+   padding: 10px;
+   overflow-x: hidden;
+   background-color: #fffcf2;
+   border: 1px solid #f5e6d3;
+ }
+
+ .task-list li {
+   list-style: none;
+   padding: 10px;
+   border-bottom: 1px solid #ddd;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 100%;
+ }
+
+ .task-main {
+   display: flex;
+   align-items: center;
+   width: 100%;
+ }
+
+ .js-task-input {
+   display: flex;
+   padding: 15px;
+   border-top: 1px solid #ddd;
+   background: #f5f7fa;
+   overflow: hidden;
+ }
+
+ .js-task-input input {
+   flex: 1;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+ }
+
+ .js-task-input button {
+   margin-left: 10px;
+   background: #4cafef;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 15px;
+   cursor: pointer;
+ }
+
+ .js-task-input button:hover {
+   background: #3399dd;
+ }
+
+ label {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   flex-grow: 1;
+ }
+
+ .task-list li.completed label {
+   text-decoration: line-through;
+   color: gray;
+ }
+
+ input[type="checkbox"] {
+   appearance: none;
+   width: 16px;
+   height: 16px;
+   border: 2px solid #f97316;
+   border-radius: 50%;
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   min-width: 16px;
+ }
+
+ input[type="checkbox"]:checked {
+   background-color: #f97316;
+   border: 2px solid #f97316;
+ }
+
+ input[type="checkbox"]:checked::after {
+   content: "";
+   position: absolute;
+   left: 4px;
+   top: 0px;
+   width: 4px;
+   height: 8px;
+   border: solid white;
+   border-width: 0 2px 2px 0;
+   transform: rotate(45deg);
+ }
+
+ .remove-btn {
+   background: none;
+   border: none;
+   color: #f97316;
+   cursor: pointer;
+   font-size: 14px;
+   margin-left: auto;
+ }
+
+ .remove-btn:hover {
+   color: #c2410c;
+ }
+
+ .task-date {
+   font-size: 12px;
+   color: #aaa;
+   margin-left: 24px;
+ }
